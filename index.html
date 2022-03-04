@@ -16,15 +16,20 @@
         <div class="header__logo">
             head.
         </div>
+        <a href="#" class="toggle">
+            <i class="fas fa-ellipsis-h"></i>
+        </a>
         <nav class="header__nav" id="nav-bar">
             <ul class="header__list">
-                <li class="list__item link1"><a href="/pages/works">Works</a></li>
-                <li class="list__item link2"><a href="pages/services">Services</a></li>
-                <li class="list__item link3"><a href="/pages/contact">Contact</a></li>
+                <li class="list__item link1"><a href="#">Works</a></li>
+                <li class="list__item link2"><a href="#">Services</a></li>
+                <li class="list__item link3"><a href="#">Contact</a></li>
             </ul>
+            <!--
             <a class="icon" onclick="burgerMenu()">
                 <i class="fas fa-ellipsis-h"></i>
             </a>
+            -->
         </nav>
     </header>
     <main>
@@ -50,9 +55,9 @@
         </section>
     </main>
 
-    <script> //so I just stole this from you since JS knowledge is limited
+    <script> 
         function burgerMenu() {
-            let burger = document.getElementById("nav-bar");
+            var burger = document.getElementById("nav-bar");
             if (burger.className === "header__nav") {
             burger.className += " responsive";
             } else {
