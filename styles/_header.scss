@@ -10,10 +10,8 @@ check if changing widths or adding @media can help.*/
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: pink;
 
     &__list {
-        background-color: palevioletred;
         display: flex;
         flex-direction: row;
         list-style: none;
