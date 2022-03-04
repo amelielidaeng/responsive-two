@@ -10,8 +10,10 @@ check if changing widths or adding @media can help.*/
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: pink;
 
     &__list {
+        background-color: palevioletred;
         display: flex;
         flex-direction: row;
         list-style: none;
@@ -56,8 +58,22 @@ check if changing widths or adding @media can help.*/
 
     .header__nav {
         display: none;
+        width: 100%;
     }
 
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__list {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .header__nav.active {
+        display: flex;
+    }
 }
 
 /*
