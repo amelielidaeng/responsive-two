@@ -1,0 +1,67 @@
+$mobile: 320px; //"default"? - trying to design mobile first
+$tablet: 768px;
+$desktop: 1000px; 
+
+.info { //info
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding-bottom: 30px;
+
+    &__container {
+        max-width: 217px;
+        width: 100%;
+        min-height: 116px;
+        @media screen and (min-width: $tablet) {
+            max-width: 574px;
+            width: 100%;
+            min-height: 171px;
+        }
+        @media screen and (min-width: $desktop) {
+            max-width: 574px;
+            width: 100%;
+            min-height: 198px;
+        }
+    }
+
+    &__headline {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: -0.8px;
+        text-align: center;
+        color: #242635;
+        @media screen and (min-width: $tablet) {
+            font-size: 72px;
+            line-height: 83px;
+            letter-spacing: -1.6px;
+        }
+        @media screen and (min-width: $desktop) {
+            font-size: 90px;
+            line-height: 102px;
+            letter-spacing: -2px;
+        }
+    }
+
+    &__text {
+        font-family: "Source Sans Pro", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-align: center;
+        color: #242635;
+        @media screen and (min-width: $mobile) {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        @media screen and (min-width: $tablet) {
+            font-size: 22px;
+            line-height: 33px;
+        }
+        @media screen and (min-width: $desktop) {
+            font-size: 22px;
+            line-height: 33px;
+        }
+    }
+}

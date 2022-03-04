@@ -1,0 +1,89 @@
+$mobile: 320px; //"default"? - trying to design mobile first
+$tablet: 768px;
+$desktop: 1000px; 
+
+.header {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        font-family: "Source Sans Pro", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: #242635;
+
+        .list__item {
+            padding-left: 20px;
+        }
+    }
+
+    &__logo { /*font weight seems off in relation to figma image*/
+        font-family: "Baloo 2";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: -0.25px;
+        color: #242635;
+    }
+}
+
+
+
+.header__nav {
+    background-color: lavender;
+    overflow: hidden;
+}
+
+.header__nav a {
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    float: right; 
+    display: block;
+    padding: 14px 16px;
+}
+
+.header__nav a:hover {
+    color: blue;
+}
+
+.header__nav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.header__nav .icon {
+    display: none; 
+}
+
+@media screen and (max-width: $tablet) {
+    .header__nav a:not(:first-child) {display:none;}
+    .header__nav a.icon {
+        float: left; 
+        display: block;
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .header__nav.responsive {position: relative;}
+    .header__nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .header__nav.responsive a {
+        float: none;
+        display: block;
+        text-align: right;
+    }
+} 

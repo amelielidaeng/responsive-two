@@ -1,0 +1,29 @@
+$mobile: 320px; //"default"? - trying to design mobile first
+$tablet: 768px;
+$desktop: 1000px; 
+
+body {
+    margin: auto; 
+    max-width: 1400px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #242635;
+}
+
+a:visited {
+    color: lightgray;
+}
+
+a:hover {
+    color: blue;
+}
+
